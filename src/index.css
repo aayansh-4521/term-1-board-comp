@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Luckiest+Guy&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", sans-serif;
+  --font-bubbly: "Luckiest Guy", cursive;
+
+  --color-earth-green: #2E7D32;
+  --color-sky-blue: #0288D1;
+  --color-warning-orange: #F57C00;
+  --color-crisis-grey: #455A64;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-white text-zinc-900;
+  }
+}
+
+.glass-morphism {
+  @apply bg-white/30 backdrop-blur-md border border-white/20;
+}
+
+.bubbly-heading {
+  @apply font-bubbly tracking-wider;
+}
